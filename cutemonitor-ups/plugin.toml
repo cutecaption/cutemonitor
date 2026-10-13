@@ -557,7 +557,7 @@ entry = "bar.luau"
   type = "select"
   label_key = "settings.label_content.label"
   default = "battery_load"
-  visible_when = { key = "show_label", values = [true] }
+  visible_when = { key = "show_label", values = ["true"] }
   options = [
     { value = "battery_load", label_key = "settings.label_content.options.battery_load" },
     { value = "battery", label_key = "stats.battery_pct" },

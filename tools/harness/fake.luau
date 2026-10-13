@@ -497,6 +497,11 @@ function H.validate(node, depth, path)
   if node.type == "button" and node.props.text ~= nil then
     table.insert(H.texts, "[" .. node.props.text .. "]")
   end
+  if node.type == "box" and node.props.fill == nil then
+    -- Box copies its rect's default style and only resolves "clear" once a fill is set,
+    -- so an unfilled box draws solid black (box.cpp). Empty space is ui.spacer's job.
+    H.issue(`{where} has no fill and will draw black; use ui.spacer for empty space`)
+  end
   if node.type == "glyph" and not RULES.glyphs[node.props.name] then
     H.issue(`{where} unknown glyph {tostring(node.props.name)}`)
   end

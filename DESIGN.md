@@ -70,7 +70,7 @@ is 272 px, the width of a Clock (112) + Weather (160) row.
   ("Load 18%") don't fit every stat pair; captions underneath always do.
 - **Baselines:** rows align label boxes, not baselines, and a label's baseline sits higher
   in a bigger box, so a smaller label bottom-aligned with a bigger one lands low. Lift it with
-  a spacer under it — measured for Inter: 31.5 vs 14 → 4 px, 31.5 vs 20 → 3, 26 vs 14 → 3,
+  a `ui.spacer` under it (never an unfilled `ui.box`: that draws solid black) — measured for Inter: 31.5 vs 14 → 4 px, 31.5 vs 20 → 3, 26 vs 14 → 3,
   20 vs 14 → 1 (`lift()` in the UPS `desktop.luau`).
 - **Text that must fit:** measure the longest realistic value in the shell font (Inter) —
   `pango-view` does it. A label with a fixed width wraps unless it has `maxLines`; a label in

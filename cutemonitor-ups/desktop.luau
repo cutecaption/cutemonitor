@@ -112,7 +112,7 @@ local function lift(node, bigSize: number, smallSize: number)
   if px == 0 then
     return node
   end
-  return ui.column({ gap = 0 }, { node, ui.box({ width = 1, height = px }) })
+  return ui.column({ gap = 0 }, { node, ui.spacer({ height = px, flexGrow = 0 }) })
 end
 
 -- Big number with a smaller unit ("180" + "W") on one baseline; percentages

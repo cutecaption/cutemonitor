@@ -198,7 +198,7 @@ local function heroCard(lost: boolean)
     local parts = { label(number, HERO, color, { fontWeight = "bold" }) }
     if unit ~= "" then
       -- Nudged up onto the number's baseline, like lift() in desktop.luau.
-      table.insert(parts, ui.column({ gap = 0 }, { label(unit, BODY, color), ui.box({ width = 1, height = 3 }) }))
+      table.insert(parts, ui.column({ gap = 0 }, { label(unit, BODY, color), ui.spacer({ height = 3, flexGrow = 0 }) }))
     end
     return ui.column({ width = HERO_CELL, gap = 0, align = "center" }, {
       ui.row({ gap = 3, align = "end" }, parts),

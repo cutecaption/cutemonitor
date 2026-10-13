@@ -5,6 +5,19 @@ that shows UPS status from CyberPower's `pwrstat` or from NUT. The plugin lives 
 [`cutemonitor-ups/`](cutemonitor-ups/README.md); that folder alone is what goes to the
 Noctalia community plugin store.
 
+## Screenshots
+
+The four desktop layouts (Gauges, Graph, Status, Readout), the detail panel, and the bar
+item's tooltip:
+
+<p>
+  <img src="docs/screenshots/desktop.png" alt="Gauges, Graph, Status and Readout desktop widgets" height="520">
+  <img src="docs/screenshots/panel.png" alt="Detail panel with big numbers, live graph, readout and actions" height="520">
+</p>
+<p>
+  <img src="docs/screenshots/bar.png" alt="Bar item with its tooltip" height="150">
+</p>
+
 ## Using it from this folder
 
 This folder is a Noctalia plugin source. Register it once (with the path you cloned it

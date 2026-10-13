@@ -1,0 +1,8 @@
+{
+  "languageMode": "nonstrict",
+  "lint": {
+    "FunctionUnused": false
+  },
+  "lintErrors": false,
+  "globals": ["noctalia", "ui", "desktopWidget", "barWidget", "panel"]
+}

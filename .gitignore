@@ -1,0 +1,5 @@
+# Throwaway output of tools/harness/run-ups.sh
+tools/harness/out/
+
+# luau-lsp type definitions, fetched locally (see the community-plugins README)
+noctalia.d.luau
